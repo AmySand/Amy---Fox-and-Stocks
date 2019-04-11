@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fox Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+
+            .talkbubble {
+                  width: 300px;
+                  height: 150px;
+                  background: rgb(255, 70, 70);
+                  position: relative;
+                  -moz-border-radius: 10px;
+                  -webkit-border-radius: 10px;
+                  border-radius: 10px;
+                  display:flex;
+                  position: absolute;
+                  left: 60%;
+                  top: 15%;
+                  padding: 10px;
+                  z-index: 100;
+                }
+                .talkbubble:before {
+                  content: "";
+                  position: absolute;
+                  right: 100%;
+                  top: 26px;
+                  width: 0;
+                  height: 0;
+                  border-top: 13px solid transparent;
+                  border-right: 26px solid rgb(255, 70, 70);
+                  border-bottom: 13px solid transparent;
+                  z-index: 100;
+                }
+                #bubbleContainer{
+                /* position: absolute;
+                    z-index: 100; */
+  }
+                .img-fluid {
+                    max-height: 400px;
+                }    
+              
+            </style>
+
+    </head>
+
+
+
+<body class="container">
+    <div class="container d-flex" id="bubbleContainer">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Fox & Stocks</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+
+                </div>
+            </div>
+        </div>
+        <div id="fox-slideshow" class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="https://randomfox.ca//images//81.jpg" class="img-fluid" slt="Alternating Foxes">
+                </div>
+            </div>
+        </div>
+    </main>
+    <form>
+        <div class="form-group">
+            <label for="ticker-symbol">Enter Ticker Symbol</label>
+            <input type="text" class="form-control" id="ticker-symbol" placeholder="Company Ticker Symbol" value="">
+        </div>
+        <div class="form-group">
+            <label for="company-name">Enter Company Name</label>
+            <input type="text" class="form-control" id="company-name" placeholder="Company Name">
+        </div>
+        <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+        <a href="form.html">Sign Up</a>
+    </form>
+
+    <div id="tickerContainer"></div>
+
+    <script src="fox project.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
